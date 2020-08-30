@@ -2,7 +2,7 @@
 
 Java 6 cannot currently be installed on macOS 10.15 Catalina because there is a newer version of Java installed on the system. Attempts to reinstall legacy Java libraries upon upgrade of the OS may result in errors restricting installation. Some users have also experienced their previously existing legacy Java libraries have been moved or quarantined. This renders ENVI/IDL unusable. If you are seeing warning icons indicating you cannot place Java onto the disk because a newer version of the package is already installed, such as:
 
-[Packege Installation Error](JavaWarning_1.png)
+![Packege Installation Error](JavaWarning_1.png)
 
 We have found a workaround provided below that has alleviated this issue for some users. This is an unofficial workaround and users should be aware to attempt this with knowledge that it is at their own risk. The workaround creates an AppleScript that removes the installation limits from Java for macOS 2017-001. The AppleScript creates a new modified Java installer package file, JavaPackageforModifiedforCatalina.pkg which should work for installation of Java 6. (NOTE: this article assumes the user has obtained in installed the legacy Java for OS X 2017-001 from Apple Support):
 
